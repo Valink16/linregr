@@ -15,7 +15,8 @@ plt.axis('equal')
 for x,y in zip(xdata, ydata):
     plt.scatter(x, y)
 
-r = linregr.Regressor(xdata, ydata)
-print(r.regress())
+r = linregr.regress(xdata, ydata)
+print(r)
+r.plot(plt)
 plt.show()
 

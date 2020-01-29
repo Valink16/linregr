@@ -9,9 +9,6 @@ class LinearFunction:
         self.slope = a
         self.yInter = b
 
-    def infiniteSlope(self, x):
-        self.__init__()
-
     def __repr__(self):
         sign = ("-", "+") [self.yInter > 0]
         return "{}x {} {}".format(self.slope, sign, abs(self.yInter))
